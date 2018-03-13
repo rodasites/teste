@@ -1,3 +1,11 @@
+
+Instruções para rodar a aplicação
+
+- Instale a versão mais recente do nodejs
+- Clone o projeto para seu computador
+- No terminal vá até o diretório testeListarFilmes e rode o comando "npm install"
+- rode o comando de inicialização "ng serve" 
+
 # TesteListarFilme
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
@@ -25,3 +33,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
