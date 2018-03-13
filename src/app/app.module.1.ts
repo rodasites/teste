@@ -1,4 +1,4 @@
-import '../polyfills';
+import './polyfills';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -28,7 +28,6 @@ import { MatNativeDateModule } from '@angular/material';
     FilterPipe,
     FilmsDetailComponent
   ],
-  entryComponents: [FilmsDetailComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { useHash : true }),
@@ -40,6 +39,7 @@ import { MatNativeDateModule } from '@angular/material';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
+  entryComponents: [FilmsDetailComponent, FilmsPageComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

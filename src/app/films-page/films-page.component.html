@@ -1,29 +1,29 @@
 <div class="container">
-
   <div class="row">
-    <div class="col-12">
-      <input name="search" type="text" class="form-control" placeholder="Pesquise pelo Título, Episódio, Diretor ou ano..."/>
+    <div class="col-12" style="margin-top:3px; margin-bottom:6px;  ">
+      <div class="input-group" id="adv-search">
+        <input [(ngModel)]="searchText" type="text" class="form-control" placeholder="Filter" />
+      </div>
     </div>
   </div>
-
   <div class="row">
     <div class="col-12">
       <table class="table-striped">
         <tr>
-          <th>Título</th>
-          <th>Episódio</th>
-          <th>Diretor</th>
-          <th>Ano</th>
+          <th width="35%">Title</th>
+          <th width="15%">Episode</th>
+          <th width="25%">Director</th>
+          <th width="20%">Year</th>
+          <th width="15%"></th>
         </tr>
-
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+        <tr *ngFor="let film of films  | filter : searchText ">
+            <td>{{ film.title }}</td>
+            <td>{{ film.episode_id }}</td>
+            <td>{{ film.director }}</td>
+            <td>{{ film.release_date | date:"yyyy" }}</td>
+            <td><button class="btn" (click)="openDialog(film)">Detail</button></td>
+          </tr>
       </table>
     </div>
   </div>
-
 </div>

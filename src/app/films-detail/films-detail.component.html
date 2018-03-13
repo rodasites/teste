@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-12">
+    <p> <b>Title:</b> {{ data.film.title }} </p>
+    <p> <b>Episode:</b> {{ data.film.episode_id }}</p>
+    <p> <b>Synopsis:</b> {{ data.film.opening_crawl }}</p>
+    <p> <b>Director:</b> {{ data.film.director }}</p>
+    <p> <b>Producer:</b> {{ data.film.producer }}</p>
+    <p> <b>Release date:</b> {{ data.film.release_date | date:"dd/MM/yyyy" }}</p>
+    <p> </p>
+  </div>
+</div>
